@@ -1,0 +1,27 @@
+{
+  "name": "nchs-nvss-azure",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/src/functions/*.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "clean": "rimraf dist",
+    "prestart": "npm run clean && npm run build",
+    "start": "func start --javascript",
+    "test": "echo \"No tests yet...\""
+  },
+  "dependencies": {
+    "@azure/functions": "^4.5.0",
+    "fsh-sushi": "^3.11.0",
+    "gofsh": "^2.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.x",
+    "azure-functions-core-tools": "^4.x",
+    "lodash-es": "^4.17.21",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}
